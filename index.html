@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href=" base/static/images/favicon.ico" type="image/ico"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Alpine</title>
+
+	<link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="static/build/css/custom.css" rel="stylesheet">
+	<link href="static/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+	<link href="static/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+<div class="container body">
+	<div class="main_container">
+		<!-- Side Panel -->
+		<div class="col-md-3 left_col">
+			<div class="left_col scroll-view">
+				<div class="navbar nav_title" style="border: 0;">
+					<a href="" class="site_title"><i class="fa fa-spinner"></i> <span>Alpine</span></a>
+				</div>
+				<div class="clearfix"></div>
+				<div class="profile clearfix">
+					<div class="profile_pic">
+						<img src=" static/images/img.jpg" alt="..." class="img-circle profile_img">
+					</div>
+					<div class="profile_info">
+						<span>Welcome</span>
+					</div>
+				</div>
+				<br />
+				<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+					<ul class="nav side-menu">
+						<li><a><i class="fa fa-table"></i> Report <span class="fa fa-chevron-down"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Top Nav -->
+		<div class="top_nav">
+			<div class="nav_menu">
+				<nav>
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div class="right_col" role="main">
+			<div class="page-title">
+				<div class="title_left">
+					<h3>iPhone 8 <small>White</small></h3>
+					<br>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class	="row">
+				<div class="x_panel">
+					<div class="container">
+						<!-- Title -->
+						<div class="x_title">
+							<div class="col-sm-1" style="border:0px solid grey"><h2>Summary <small></small></h2></div>
+							<ul class="nav navbar-right panel_toolbox">
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+								<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="x_content">
+							<!-- Progress bar -->
+							<div class="row ">
+								<div class="col-sm-3">
+									<div class="col-sm-2"><b>Metrics </b></div>
+									<div class="col-sm-9">
+										<div class="progress" style="margin:0px;">
+											<div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">40</div>
+											<div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%">30</div>
+											<div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">20</div>
+										</div>
+									</div>
+									<div class="col-sm-1"></div>
+								</div>
+								<div class="col-sm-9"></div>
+							</div>
+							<br>
+							<!-- Table -->
+							<div class="row">
+								<div class="col-sm-12">
+									<table border="0" class="dataframe table table-striped table-bordered" id="metric_table">
+										<thead>
+										<tr style="text-align: right;">
+											<th>Index</th>
+											<th>Metric</th>
+											<th>Unit</th>
+											<th>Target_Low</th>
+											<th>Target_High</th>
+											<th>Boundry_Low</th>
+											<th>Boundry_High</th>
+											<th>Value</th>
+											<th>Pass</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>1</td>
+											<td>Output 1</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>0.0</td>
+											<td>Danger</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Output 2</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>1.5</td>
+											<td>Success</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Output 3</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>2.5</td>
+											<td>Danger</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Output 4</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>3.5</td>
+											<td>Warning</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Output 5</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4.5</td>
+											<td>Danger</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="x_panel">
+					<div class="container">
+						<!-- Title -->
+						<div class="x_title">
+							<div class="col-sm-1" style="border:0px solid grey"><h2>Performance <small></small></h2></div>
+							<ul class="nav navbar-right panel_toolbox">
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+								<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="x_content">
+							<!-- Progress bar -->
+							<div class="row ">
+								<div class="col-sm-3">
+									<div class="col-sm-2"><b>Metrics </b></div>
+									<div class="col-sm-9">
+										<div class="progress" style="margin:0px;">
+											<div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">40</div>
+											<div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%">30</div>
+											<div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">20</div>
+										</div>
+									</div>
+									<div class="col-sm-1"></div>
+								</div>
+								<div class="col-sm-9"></div>
+							</div>
+							<br>
+							<!-- Table -->
+							<div class="row">
+								<div class="col-sm-12">
+									<table border="0" class="dataframe table table-striped table-bordered" id="metric_table">
+										<thead>
+										<tr style="text-align: right;">
+											<th>Index</th>
+											<th>Metric</th>
+											<th>Unit</th>
+											<th>Target_Low</th>
+											<th>Target_High</th>
+											<th>Boundry_Low</th>
+											<th>Boundry_High</th>
+											<th>Value</th>
+											<th>Pass</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>1</td>
+											<td>Output 1</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>0.0</td>
+											<td>Danger</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Output 2</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>1.5</td>
+											<td>Success</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Output 3</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>2.5</td>
+											<td>Danger</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Output 4</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>3.5</td>
+											<td>Warning</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Output 5</td>
+											<td>V</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>4.5</td>
+											<td>Danger</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<script src="static/vendors/jquery/dist/jquery.min.js"></script>
+<script src="static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="static/build/js/custom.js"></script>
+<script src="static/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="static/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+</body>
+</html>
